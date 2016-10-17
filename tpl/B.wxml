@@ -1,0 +1,5 @@
+<import src="a.wxml"/>
+
+<template name="B">
+  <text> user name: {{name}} </text>
+</template>

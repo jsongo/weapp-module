@@ -1,0 +1,19 @@
+<!--include 用法-->
+<include src="../common/header.wxml"/>
+
+<!--import 用法-->
+<import src="../../tpl/B.wxml"/>
+<template is="B" data="{{...userInfo}}"/>
+<template is="A"/> <!-- 这个地方找不到template -->
+
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text class="userinfo-nickname">{{userInfo.name}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+
+<include src="../common/footer.wxml"/>
